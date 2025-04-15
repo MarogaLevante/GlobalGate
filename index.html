@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Gate Logistics</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/rtl.css" id="rtl-style" disabled>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="header-banner">
+            <img src="assets/images/banner.jpg" alt="Global Gate Banner">
+            <div class="header-overlay">
+                <h1 data-translate="hero_title">Connecting Continents, Delivering Excellence</h1>
+                <p data-translate="about_desc">A multinational leader in Middle Eastern logistics...</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de navegación principal -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="assets/images/logo.png" alt="Global Gate Logo" data-translate="logo_alt">
+        </a>
+        <div class="lang-switch">
+            <button onclick="toggleLanguage('en')">EN</button>
+            <button onclick="toggleLanguage('ar')">العربية</button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about" data-translate="nav_about">About Us</a></li>
+            <li><a href="#services" data-translate="nav_services">Services</a></li>
+            <li><a href="#tracking" data-translate="tracking_placeholder">Tracking</a></li>
+            <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección "Sobre Nosotros" -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2 data-translate="about_title">About Global Gate</h2>
+            <p data-translate="about_desc">
+                Global Gate Logistics is a leading multinational company specializing in comprehensive logistics solutions across the Middle East and beyond. 
+                With a strong presence in air, sea, and land freight, we ensure seamless supply chain management for businesses of all sizes. 
+                Our state-of-the-art warehousing facilities and efficient customs clearance services make us a trusted partner for global trade. 
+                Headquartered in Baghdad, we are committed to delivering excellence, innovation, and reliability in every aspect of logistics.
+            </p>
+            <img src="assets/images/team.jpg" alt="Our team" class="about-image" data-translate="about_image_alt">
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="services" class="services-section">
+        <h2 data-translate="services_title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="assets/images/icons/freight.jpg" alt="Freight Icon" data-translate="service1_icon_alt">
+                <h3 data-translate="service1_title">Freight Forwarding</h3>
+                <p data-translate="service1_desc">Air, sea, and land freight solutions with real-time tracking.</p>
+            </div>
+            <div class="service-card">
+                <img src="assets/images/icons/warehouse.jpg" alt="Warehouse Icon" data-translate="service2_icon_alt">
+                <h3 data-translate="service2_title">Warehousing</h3>
+                <p data-translate="service2_desc">Secure and scalable storage solutions for your goods.</p>
+            </div>
+            <div class="service-card">
+                <img src="assets/images/icons/customs.jpg" alt="Customs Icon" data-translate="service3_icon_alt">
+                <h3 data-translate="service3_title">Customs Clearance</h3>
+                <p data-translate="service3_desc">Efficient customs handling for smooth operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Rastreo -->
+    <section id="tracking" class="tracking-section">
+        <h2 data-translate="tracking_placeholder">Track Your Shipment</h2>
+        <div class="tracking-content">
+            <input type="text" placeholder="Enter Tracking Number" data-translate="tracking_placeholder">
+            <button data-translate="track_button">Track</button>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact-section">
+        <h2 data-translate="contact_title">Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Name" data-translate="name_placeholder" required>
+            <input type="email" placeholder="Email" data-translate="email_placeholder" required>
+            <textarea rows="5" data-translate="message_placeholder" required></textarea>
+            <button type="submit" data-translate="submit_button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p data-translate="address">Baghdad HQ: Al-Mansour Street</p>
+            <p>📞 +964 XXX XXX XXXX</p>
+        </div>
+    </footer>
+
+    <script src="scripts/language.js"></script>
+</body>
+</html>
